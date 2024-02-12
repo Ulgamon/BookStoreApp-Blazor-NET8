@@ -13,5 +13,5 @@ public partial class Author
 
     public string Bio { get; set; } = null!;
 
-    public virtual ICollection<Book> Books { get; set; } = new List<Book>();
+    public virtual ICollection<Book> Books { get; set; } = new HashSet<Book>();
 }
